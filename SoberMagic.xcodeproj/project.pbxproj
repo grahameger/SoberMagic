@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8C862D31E957A8F00EB8C4E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C862D21E957A8F00EB8C4E /* main.cpp */; };
+		A8C862D31E957A8F00EB8C4E /* SoberMagic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C862D21E957A8F00EB8C4E /* SoberMagic.cpp */; };
+		A8C862DB1E9589D800EB8C4E /* Sober.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C862D91E9589D800EB8C4E /* Sober.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		A8C862CF1E957A8F00EB8C4E /* SoberMagic */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SoberMagic; sourceTree = BUILT_PRODUCTS_DIR; };
-		A8C862D21E957A8F00EB8C4E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A8C862D21E957A8F00EB8C4E /* SoberMagic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SoberMagic.cpp; sourceTree = "<group>"; };
+		A8C862D91E9589D800EB8C4E /* Sober.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sober.cpp; sourceTree = "<group>"; };
+		A8C862DA1E9589D800EB8C4E /* Sober.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sober.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		A8C862D11E957A8F00EB8C4E /* SoberMagic */ = {
 			isa = PBXGroup;
 			children = (
-				A8C862D21E957A8F00EB8C4E /* main.cpp */,
+				A8C862D21E957A8F00EB8C4E /* SoberMagic.cpp */,
+				A8C862D91E9589D800EB8C4E /* Sober.cpp */,
+				A8C862DA1E9589D800EB8C4E /* Sober.hpp */,
 			);
 			path = SoberMagic;
 			sourceTree = "<group>";
@@ -119,7 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8C862D31E957A8F00EB8C4E /* main.cpp in Sources */,
+				A8C862D31E957A8F00EB8C4E /* SoberMagic.cpp in Sources */,
+				A8C862DB1E9589D800EB8C4E /* Sober.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
