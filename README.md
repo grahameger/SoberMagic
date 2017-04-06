@@ -4,7 +4,9 @@ A command line application that automatically assigns sober monitors to differen
 
 Usage: 
 
+~~~~
 ./SoberMagic <input_file_name> <number of head sobers> <number of regular sobers> <BIG or SMALL>
+~~~~
 
 The input file is structured as follows:
 
