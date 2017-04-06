@@ -49,17 +49,11 @@ int main(int argc, char const *argv[]) {
     queue_type heads;
     queue_type regs;
     
-    // for testing
-    std::vector<Sober> test_heads;
-    std::vector<Sober> test_regs;
-    
-    
     std::string first_name;
     std::string last_name;
     size_t points;
     // Loop through the number of lines that are specified by the header
-    for (size_t i = 0; i < num_entries; ++i)
-    {
+    for (size_t i = 0; i < num_entries; ++i) {
         // get the information into our temporary variables
         in_file >> first_name >> last_name >> points;
         
@@ -67,12 +61,10 @@ int main(int argc, char const *argv[]) {
         heads.push({first_name + ' ' + last_name, points});
     }
     
-    // next we have to look at our "regular" sobers
-    // we can use the same temp variables from above
+    // Next we have to look at our "regular" sobers
+    // We can use the same temp variables from above
     in_file >> header >> num_entries;
-    
-    for (size_t i = 0; i < num_entries; ++i)
-    {
+    for (size_t i = 0; i < num_entries; ++i) {
         // same as above`
         in_file >> first_name >> last_name >> points;
         regs.push({first_name + ' ' + last_name, points});
@@ -84,7 +76,7 @@ int main(int argc, char const *argv[]) {
     size_t num_head = atoi(argv[2]);
     size_t num_regs = atoi(argv[3]);
     
-    // Also we're going to get which point pool we're working with, "BIG" or "SMALL"
+    // Also we're going to get which point pool we're working with, "BIG" or "SMALL", for the filename
     std::string pool(argv[4]);
     
     // Print a header line then print the sobers and increment
