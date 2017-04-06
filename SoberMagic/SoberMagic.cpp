@@ -143,11 +143,18 @@ void write_to_file(queue_type &heads, queue_type &regs, std::string &pool) {
 }
 
 void print_queue(queue_type &queue, std::ostream &output) {
-    // this will print and empty the queue
+    // This will print and empty the queue with a random shuffle.
+    // We will pop the pq into a vector, randomly shuffle the vector
+    // Then print it to the ostream
+    std::vector<Sober> to_shuffle;
     while (!queue.empty()) {
         Sober temp = queue.top();
         queue.pop();
-        output << temp.getName() << '\t' << temp.getPoints() << '\n';
+        to_shuffle.push_back(temp);
+    }
+    std::random_shuffle(to_shuffle.begin(), to_shuffle.end());
+    for (int i = 0; i < to_shuffle.size(); ++i) {
+        output << to_shuffle[i].getName() << '\t' << to_shuffle[i].getPoints() << '\n';
     }
 }
 
